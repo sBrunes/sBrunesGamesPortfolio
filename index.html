@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="Resources/ArrowIcon.png" />
+    <link rel="icon" type="image/png" href="Resources/sBrunesWebsiteLogoDiceLowResTransparent.png" />
     <title>Sam Brunes Portfolio</title>
 </head>
 <body style="background-color: #131921; margin: 0;">
@@ -34,8 +34,8 @@
     </div>
 
     <div class="VideoGroup">
-        <video autoplay muted loop class="FrontPageVideo">
-            <source src="Resources/Videos/logolevel_(2)_5.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline class="FrontPageVideo">
+            <source src="Resources/BackgroundVideoportfolio.mp4" type="video/mp4">
         </video>
     </div>
     
@@ -47,8 +47,15 @@
         </div>
 
         <div class="TaglineBox">
-            <div class="Name">Sam Brunes</div>
-            <div class="JobTitle">Technical Game Designer</div>
+            <div class="NameAndTitleParent">
+                <div class="NameLogo">
+                    <img src="Resources/sBrunesWebsiteLogoDiceLowResTransparent.png" alt="LogoImage" style="width: 100%;">
+                </div>
+                <div class="NameAndTitle">
+                    <div class="Name">Sam Brunes</div>
+                    <div class="JobTitle">Technical Game Designer</div>
+                </div>
+            </div>
             <div class="SelfDescription">I specialize in systems design, rapid prototyping, and gameplay programming!</div>
             <div class="SocialMediaIconBox">
                 <div class="SocialMediaIcon" onclick="location.href='https://www.linkedin.com/in/sam-brunes-347095202/'">
@@ -68,7 +75,7 @@
 
     <div class="FrontPageContentHeader"></div>
     <div class="FrontPageContent">
-        <div class="ProjoectPreview" style="width: 800px;">
+        <div class="ProjoectPreview" style="--thumb:url('../Resources/FeaturedBanner.png'); width: 800px;">
             <div class="ProjectThumbnail"></div>
             <div class="ProjectDescription">
                 <div class="ProjectName">Featured Work</div>
@@ -89,7 +96,7 @@
 
     <div class="DualFrontPageContent">
         <div class="ProjectsSection">
-            <div class="ProjoectPreview">
+            <div class="ProjoectPreview" style="--thumb:url('../Resources/ElectricGold/ElectricGoldThumbnail.png')">
                 <div class="ProjectThumbnail"></div>
                 <div class="ProjectDescription">
                     <div class="ProjectName">Electric Gold</div>
@@ -97,7 +104,7 @@
                     <div class="ProjectTagline">Tagline</div>
                 </div>
             </div>
-            <div class="ProjoectPreview">
+            <div class="ProjoectPreview" style="--thumb:url('../Resources/TarCopter/ProjectThumbnail1.png')">
                 <div class="ProjectThumbnail"></div>
                 <div class="ProjectDescription">
                     <div class="ProjectName">Tar-Copter</div>
@@ -105,7 +112,7 @@
                     <div class="ProjectTagline">Tagline</div>
                 </div>
             </div>
-            <div class="ProjoectPreview">
+            <div class="ProjoectPreview" style="--thumb:url('../Resources/POCUS_Carnival/POCUS_Carnival.png')">
                 <div class="ProjectThumbnail"></div>
                 <div class="ProjectDescription">
                     <div class="ProjectName">POCUS Carnival</div>
@@ -113,7 +120,7 @@
                     <div class="ProjectTagline">Tagline</div>
                 </div>
             </div>
-            <div class="ProjoectPreview">
+            <div class="ProjoectPreview" style="--thumb:url('../Resources/Summerway/Summerway.jpg')">
                 <div class="ProjectThumbnail"></div>
                 <div class="ProjectDescription">
                     <div class="ProjectName">Summerway</div>
@@ -124,7 +131,7 @@
         </div>
 
         <div class="ProjectsSection">
-            <div class="ProjoectPreview">
+            <div class="ProjoectPreview" style="--thumb:url('../Resources/StrideVR/GaitCity1.png')">
                 <div class="ProjectThumbnail"></div>
                 <div class="ProjectDescription">
                     <div class="ProjectName">Stride VR</div>
@@ -133,7 +140,7 @@
                 </div>
             </div>
 
-            <div class="ProjoectPreview">
+            <div class="ProjoectPreview" style="--thumb:url('../Resources/PotionMasterVR/Potions3.png')">
                 <div class="ProjectThumbnail"></div>
                 <div class="ProjectDescription">
                     <div class="ProjectName">Potion Master VR</div>
@@ -142,7 +149,7 @@
                 </div>
             </div>
 
-            <div class="ProjoectPreview">
+            <div class="ProjoectPreview" style="--thumb:url('../Resources/CookingMasterVR/5.png')">
                 <div class="ProjectThumbnail"></div>
                 <div class="ProjectDescription">
                     <div class="ProjectName">Cooking Master VR</div>
