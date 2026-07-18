@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/projectStyles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="Resources/sBrunesWebsiteLogoDiceLowResTransparent.png" />
     <title>Sam Brunes | About</title>
 </head>
-<body style="background-color: #131921; margin: 0;">
+<body class="BodyBackground">
     
+    <div class="BodyWrapper">
 <div class="main">
     <div class="NavigationBar">
 
@@ -16,7 +18,7 @@
             <div class="LeftLinkGroup">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="featured.html">Featured</a></li>
+                    <li><a href="electricGold.html">Featured</a></li>
                 </ul>
             </div>
 
@@ -33,12 +35,23 @@
         </div>
     </div>
 
-    <div class="ContentHeader">
+    <!-- <div class="ContentHeader">
         <div class="SectionHeader" style="margin: 25px;">About Me</div>
+    </div> -->
+    <div class="ProjectContentHeader" style="margin-top: 25px;">
+        <div class="ProjectSectionHeaderContainer" style="width: 950px;">
+            <div class="ProjectSectionHeader">About Me</div>
+        </div>
     </div>
 
+    <!-- <div class="ProjectContentHeader" style="margin-top: 25px; justify-content: center; align-items: center;">
+        <div class="ProjectTitleContainer" style="background-color: ;">
+            <div class="ProjectTitle" style="margin-left: 25px;">About Me</div>
+        </div>
+    </div> -->
+
     <div style="width: 100%; height: auto; display: flex; justify-content: center; align-items: center; gap: 50px;">
-        <div style="width: 400px; height: auto; display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 40px; margin-top: 25px; margin-bottom: 25px;">
+        <div class="AboutMeWrapper" style="width: 600px; height: auto; display: flex; flex-direction: column; justify-content: center; align-items: center; margin-top: 25px; margin-bottom: 25px;">
             <div class="AboutMeText">Hello! My name's Sam, and I’m a technical game designer. I’ve been making games for over 5 years, and will be for many more to come! I'm proficient in both Unreal Engine 5 and Unity, and specialize in iterative design and gameplay prototyping.</div>
             <div class="AboutMeText">If I want to understand how a game feature might feel within a project, I just quickly prototype it! I'm a big fan of creating and understanding how a feature fundamentally feels before taking it further in development.</div>
             <div class="AboutMeText">I graduated with my Master's in Human Computer Interaction in 2024, which has really helped me develop a focus on expected player-experience during my design process.</div>
@@ -82,9 +95,14 @@
                 </div>
             </div>
 
-            <div class="ContentHeader" style="background-color: #ffffff;">
+            <!-- <div class="ContentHeader" style="background-color: #ffffff;">
                 <div class="SectionHeader" style="margin: 25px; font-size: 30px;">Professional Strengths</div>
-            </div>
+            </div> -->
+            <div class="ProjectContentHeader" style="margin-top: 50px; margin-bottom: 15px;">
+        <div class="ProjectSectionHeaderContainer" style="width: 950px;">
+            <div class="ProjectSectionHeader">Professional Strengths</div>
+        </div>
+    </div>
 
             <div class="SkillsParent">
                 <div class="SkillsContainer">
@@ -131,6 +149,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>

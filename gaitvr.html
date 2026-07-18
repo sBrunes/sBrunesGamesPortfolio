@@ -8,8 +8,9 @@
     <link rel="icon" type="image/png" href="Resources/sBrunesWebsiteLogoDiceLowResTransparent.png" />
     <title>Sam Brunes | Gait VR</title>
 </head>
-<body style="background-color: #131921; margin: 0;">
+<body class="BodyBackground">
     
+    <div class="BodyWrapper">
 <div class="main">
     <div class="NavigationBar">
 
@@ -17,7 +18,7 @@
             <div class="LeftLinkGroup">
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="featured.html">Featured</a></li>
+                    <li><a href="electricGold.html">Featured</a></li>
                 </ul>
             </div>
 
@@ -34,17 +35,17 @@
         </div>
     </div>
 
-    <div class="ProjectContentHeader">
-        <div class="ProjectTitleContainer">
-            <div class="ProjectTitle">Gait VR</div>
-            <div class="ProjectTitleDetails">Physical Therapy for TBI patients</div>
-        </div>
-    </div>
-
     <div class="CenterContainer" style="margin-top: 25px;">
         <iframe class="PreviewVideo"
             src="https://www.youtube.com/embed/SFvQHHUb-hw?si=9azzLzt5KJ3kMIWk">
       </iframe>
+    </div>
+
+    <div class="ProjectContentHeader" style="margin-top: 25px;">
+        <div class="ProjectTitleContainer">
+            <div class="ProjectTitle" style="margin-left: 25px;">Gait VR</div>
+            <div class="ProjectTitleDetails" style="margin-left: 25px;">Physical Therapy for TBI patients</div>
+        </div>
     </div>
 
     <div class="ProjectContentHeader" style="margin-top: 25px;">
@@ -56,8 +57,25 @@
     <div class="CenterContainer">
         <div class="ProjectTextContainer" style="flex-direction: row;">
             <div class="OverviewTextContainer">
-                <div style="margin: 25px;" class="ProjectSectionText">In this project, I wanted to gain get more experience developing gameplay features for a multiplayer game. To do this, I spent a couple months prototyping a simple 1v1 competitive helicopter fighting game where you control all 3 axis of rotation for your own helicopter. In the game, you fire sticky balls of tar at your opponent. When the tar balls stick to the other player's helicopter, they make the helicopter more difficult to control.</div>
-                <div style="margin: 25px;" class="ProjectSectionText">During my time prototyping, I got more experience working with things like replication, and peer-to-peer networking. While this project was ultimately just a prototype and excuse for me to improve my skills, I implemented several gameplay features.</div>
+                <div style="margin: 25px;" class="ProjectSectionText">This is a VR therapy application made for an on-going research project. In the study, Physical Therapists aid patients with Traumatic Brain Injury (TBI) through their physical exercise regimen as they walk and do various exercises through these VR environments. This application was created and iterated on continuously.</div>
+
+                <div style="margin: 25px;" class="ProjectSectionText">I have been involved in this project for the entirety of its development, and have served as the lead developer for the application. In addition to this, I was HEAVILY involved in co-designing features, and training physical therapists to operate the experience. I would frequently create prototypes for features and environments, before gathering feedback from several Physical Therapists in a rehab setting. Since patient comfort and application usability were EXTREMELY important for this project, these feedback sessions provided valuable insights that could be used to improve the overall quality.</div>
+
+                <div style="margin: 25px;" class="ProjectSectionText">This project proved particularly challenging due to the physical enviornment in which it would be used. While patients are wearing the headset, they are suspended from a 75-foot long straight track, so that they can walk and exercise without fear of falling. Because of this, it was absoluetely necessary to design the experience/application around the following considerations:</div>
+
+                <div style="margin: 25px;" class="ProjectSectionText">
+                <ul>
+                    <li class="ToolsUsedListItem">A solution for accomidating such a long physical distance with a VR headset had to be found</li>
+                    <li class="ToolsUsedListItem" style="margin-top: 10px;">Logistics regarding deployment of such a system in a clinical environment (in a way that's unobtrusive to therapists and other patients) had to be resolved</li>
+                    <li class="ToolsUsedListItem" style="margin-top: 10px;">Gaining access to the actual environment the application would be used in required careful planning and collaboration, so that nearby patients would not be interrupted</li>
+                    <li class="ToolsUsedListItem" style="margin-top: 10px;">Calibration methods would have to be developed, so that the intended walking directions/areas in the virtual world would line-up with the physical straight-line track in the real world</li>
+                </ul></div>
+
+                <div style="margin: 25px;" class="ProjectSectionText">To address these challenges, frequent collaboration and feedback was collected on rapid development. When this project was first being developed, we had planned on using Unreal Engine 5 with a wired HTC Vive Pro 2 VR headset. However, we quickly encountered several logistical problems related to usability, physical space, and tracking capabilities of the headset. Because of this, we pivoted to using the HTC Vive Focus Vision 2 mid-development.</div>
+
+                <div style="margin: 25px;" class="ProjectSectionText">Since this new headset we decided to use was a standalone VR headset (at least that's how we planned to use it), it could not run the resource-intensive prototype that we had previously developed. Because of this, I was tasked with recreating the entirety of the application in Unity3D, with the aim of optimizing it as much as possible.</div>
+
+                <div style="margin: 25px;" class="ProjectSectionText">Despite the need for rapid development and collaboration, I was able to efficiently recreate the application. We found that this new version, combined with the less-intrusive standalone headset, fit our needs for the study.</div>
             </div>
 
             <div class="ProjectDetailsBackground">
@@ -70,6 +88,14 @@
                         <!-- <div class="ProjectDetailsTextLabel">Team Size:</div> -->
                         <div class="ProjectDetailsText" style="margin-top: 10px;">Lead Developer</div>
                     </div>
+                      <div class="ProjectDetailsTextParent">
+                        <!-- <div class="ProjectDetailsTextLabel">Team Size:</div> -->
+                        <div class="ProjectDetailsText" style="margin-top: 10px;">Co-Designer</div>
+                    </div>
+                      <div class="ProjectDetailsTextParent">
+                        <!-- <div class="ProjectDetailsTextLabel">Team Size:</div> -->
+                        <div class="ProjectDetailsText" style="margin-top: 10px;">UX Designer</div>
+                    </div>
                     <div class="ToolsUsedBox">
                         <div class="ToolsUsedHeader">
                             <div class="ToolsUsedHeaderText" style="margin: 25px;">Tools Used</div>
@@ -79,10 +105,11 @@
                                 <li class="ToolsUsedListItem">Unreal Engine 5</li>
                                 <li class="ToolsUsedListItem">C++</li>
                                 <li class="ToolsUsedListItem">Unity</li>
+                                <li class="ToolsUsedListItem">C#</li>
                             </ul>
                             <ul class="ToolsUsedList">
                                 <li class="ToolsUsedListItem">Visual Scripting/Blueprinting</li>
-                                <li class="ToolsUsedListItem">C#</li>
+                                <li class="ToolsUsedListItem">Blender</li>
                             </ul>
                         </div>
                     </div>
@@ -105,10 +132,13 @@
 
     <div class="HighlightsBox">
         <div class="HighlightsContainer">
-            <ul class="ToolsUsedList" style="width: 60%;">
-                <li class="HighlightsListItem">Gained experience working on a multiplayer game</li>
-                <li class="HighlightsListItem">Implemented and prototyped gameplay mechanics</li>
-                <li class="HighlightsListItem">Debugged replication issues</li>
+            <ul class="HighlightList">
+                <li class="HighlightsListItem">Rapidly prototyped application features and environments</li>
+                <li class="HighlightsListItem">Co-designed alongside collaborators to ensure research goals could be met</li>
+                <li class="HighlightsListItem">Frequently assessed usability through in-person Physical Therapist and stakeholder feedback sessions</li>
+                <li class="HighlightsListItem">Demonstrated flexibility and ability to pivot development when developing outside of typical use-case comfort zone</li>
+                <li class="HighlightsListItem">Collaborated to conduct training sessions with 5 different Physical Therapists (whom would be participating in the study)</li>
+                <li class="HighlightsListItem">Facilitaed collaboration with Physical Therapists and other Neuroscience Center professionals</li>
             </ul>
         </div>
     </div>
@@ -134,6 +164,7 @@
             </div>
         </div>
     </div>
+</div>
 </div>
 </body>
 </html>
